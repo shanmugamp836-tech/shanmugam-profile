@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sales Associate at NoBroker.com in Bengaluru, with experience in sales leadership and a BSc in PCM from Sri Acharya Nagarjuna University. Connect with Shanmugam Pooripakam for professional opportunities.">
+  <title>Shanmugam Pooripakam – Working Professional | Bengaluru, India</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fb;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      width: 100%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .search-box {
+      margin: 40px 0 20px;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #004aad;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #00347a;
+    }
+
+    .profile-card {
+      display: none;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      text-align: center;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .profile-card img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #004aad;
+    }
+
+    h2 {
+      color: #004aad;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      margin-top: 25px;
+      color: #333;
+      font-weight: bold;
+      border-bottom: 2px solid #004aad;
+      display: inline-block;
+      padding-bottom: 3px;
+    }
+
+    p {
+      color: #444;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Find My Profile</h1>
+  </header>
+
+  <div class="search-box">
+    <input type="text" id="nameInput" placeholder="Enter name...">
+    <button onclick="searchName()">Search</button>
+  </div>
+
+  <div class="profile-card" id="profileCard">
+    <img src="shannu img.jpeg" alt="Shanmugam Pooripakam Photo">
+    <h2>Shanmugam Pooripakam</h2>
+    <p><strong>Working Professional | Bengaluru, India</strong></p>
+
+    <div class="section">
+      <p class="section-title">About Me</p>
+      <p>Shanmugam Pooripakam is a Sales Associate at NoBroker.com, based in Bengaluru, Karnataka, India. With experience as a Sales Team Lead at ffreedom (Financial Freedom App), Shanmugam brings strong skills in client management and sales strategy.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-title">Professional Experience</p>
+      <p><strong>Sales Associate | NoBroker.com</strong> | 2023 – Present</p>
+      <p><strong>Sales Team Lead | ffreedom (Financial Freedom App)</strong> | 2022 – 2023</p>
+      <p>Previous Experience: Suvision Holding Private LTD</p>
+    </div>
+
+    <div class="section">
+      <p class="section-title">Education</p>
+      <p>BSc (PCM) | Sri Acharya Nagarjuna University | 2020 – 2023</p>
+      <p>MPC (Maths) | PCN Govt Jr. College | 2018 – 2020</p>
+      <p>High School Diploma | ZPHS | 2018</p>
+    </div>
+
+    <div class="section">
+      <p class="section-title">Contact</p>
+      <p>📍 Bengaluru, Karnataka, India</p>
+      <p>📧 <a href="mailto:shanmugam.pooripakam1@nobroker.in">shanmugam.pooripakam1@nobroker.in</a></p>
+    </div>
+  </div>
+
+  <script>
+    function searchName() {
+      const input = document.getElementById('nameInput').value.trim().toLowerCase();
+      const card = document.getElementById('profileCard');
+      if (input === 'shanmugam pooripakam') {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+        alert('No record found for: ' + input);
+      }
+    }
+  </script>
+</body>
+</html>
